@@ -1,0 +1,15 @@
+#microphone, #microphone-muted, #speaker, #speaker-muted {
+    width: 40px;
+}
+#flex-parent {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.flex-element {
+    width: 30vw;
+    margin: 5%;
+}
