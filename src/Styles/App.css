@@ -1,7 +1,22 @@
-#microphone, #microphone-muted, #speaker, #speaker-muted {
-    width: 40px;
+:root {
+    background: linear-gradient(125deg, rgb(0, 0, 0), rgb(24, 24, 54));
 }
-#flex-parent {
+#microphone, #microphone-muted, #speaker, #speaker-muted {
+    width: 42px;
+    height: 42px;
+    padding: 1%;
+    border: 1px solid #000;
+    background: #fff;
+    border-radius: 50%;
+}
+#textarea {
+    background: linear-gradient(45deg, lightblue, lightgreen);
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 1.25em;
+    width: 500px;
+}
+#flex-parent {  
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -10,6 +25,5 @@
     align-content: center;
 }
 .flex-element {
-    width: 30vw;
     margin: 5%;
 }
