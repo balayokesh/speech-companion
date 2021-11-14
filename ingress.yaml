@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  labels:
+    app: speech-companion
+  name: speech-companion-ingress
+spec:
+  rules:
+    - host: speech-companion.ae150322-a780-4657-a1e0-604a842c2fc0.k8s.civo.com
+      http:
+        paths:
+          -
+            backend:
+              service:
+                name: speech-companion
+                port:
+                  number: 3000
+            path: /
+            pathType: "Prefix"
