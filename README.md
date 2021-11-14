@@ -29,3 +29,5 @@ docker build -t speech-companion .
 ### 3. Run the Docker container locally
 ```bash
 docker run --name speech-companion -p 8080:3000 -d speech-companion
+```
+With your container running, you can now visit your application by navigating your browser to `http://localhost:8080`
