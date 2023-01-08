@@ -8,13 +8,19 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import Microphone from './Images/microphone.svg';
 import MicrophoneMuted from './Images/microphone-muted.svg';
 import SpeakerMuted from './Images/speaker-muted.svg';
+import Speaker from './Images/speaker.svg';
 
 function App() {
 
-  const speakContent = () => {
+  function speakContent() {
+    document.getElementById("speaker").src = Speaker;
     var msg = new SpeechSynthesisUtterance();
-    msg.text = document.getElementById('textarea').innerHTML;
+    msg.text = document.getElementById('textarea').textContent;
     window.speechSynthesis.speak(msg);
+    
+    msg.addEventListener("end", () => {
+      document.getElementById("speaker").src = SpeakerMuted;
+    });
   }
 
   const {

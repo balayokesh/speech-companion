@@ -35,6 +35,7 @@
     border: 3px solid yellow;
     color: yellow;
     background: rgb(32, 32, 32);
+    border-radius: 5px;
 }
 #reset:hover {
     cursor: pointer;
@@ -45,4 +46,19 @@
 }
 .flex-element {
     margin: 5%;
+}
+
+@media screen and (max-width: 800px) {
+    #flex-parent {  
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #textarea {
+        width: 95%;
+    }
 }
