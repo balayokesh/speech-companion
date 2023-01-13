@@ -11,6 +11,8 @@ import MicrophoneMuted from './Images/microphone-muted.svg';
 import SpeakerMuted from './Images/speaker-muted.svg';
 import Speaker from './Images/speaker.svg';
 
+
+
 function App() {
 
   function speakContent() {
@@ -39,11 +41,14 @@ function App() {
   }
 
   return (
+
+
+
     <div id='flex'>
       <div >
-      <img src={listening ? Microphone : MicrophoneMuted} id='microphone' alt='microphone' className='flex-element' onClick={listening ? SpeechRecognition.stopListening : SpeechRecognition.startListening} />
-      <button onClick={reset} id='reset'>Reset</button>
-      <img src={SpeakerMuted} onClick={speakContent} id='speaker' alt='speaker' className='flex-element' />
+        <img src={listening ? Microphone : MicrophoneMuted} id='microphone' alt='microphone' className='flex-element' onClick={listening ? SpeechRecognition.stopListening : SpeechRecognition.startListening} />
+        <img src={SpeakerMuted} onClick={speakContent} id='speaker' alt='speaker' className='flex-element' />
+        <button onClick={reset} id='reset'>Reset</button>
       </div>
       <div id='flex-parent'>
 
