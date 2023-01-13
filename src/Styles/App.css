@@ -1,22 +1,30 @@
 :root {
-    background: linear-gradient(125deg, rgb(0, 0, 0), rgb(24, 24, 54));
+    background-color: #0c0513;
+    background-image: url('pre.svg');
 }
 #microphone, #microphone-muted, #speaker, #speaker-muted {
-    width: 42px;
+   
+    width:  200pxpx;
     height: 42px;
     padding: 1%;
-    border: 1px solid #000;
-    background: #fff;
-    border-radius: 50%;
-}
-#textarea {
-    background: linear-gradient(45deg, lightblue, lightgreen);
-    padding: 2%;
+    border: 1px solid  rgb(36, 26, 57);
+    background: rgb(230, 219, 255);
     border-radius: 10px;
+
+}
+
+
+#textarea {
+    background: #e2d4e9;
+    padding: 2%;
+    border-radius: 8px;
     font-size: 1.25em;
-    width: 500px;
+    width: 90vh;
+    height: 700px;
+    text-align: left;
     margin-top: 45px;
-    max-height: 80vh;
+    margin-bottom: 45px;
+    margin-right: 45px;
     overflow-y: scroll;
 }
 #flex-parent {  
@@ -27,14 +35,18 @@
     align-items: center;
     align-content: center;
 }
+#flex {  
+    display: flex;
+    
+}
 #reset {
     width: 200px;
+    padding: 2% 2%;
+    margin: 10px;
     font-size: 1.25em;
-    padding: 3% 2%;     
-    margin: 1%;
-    border: 3px solid yellow;
-    color: yellow;
-    background: rgb(32, 32, 32);
+    border: 3px solid rgb(196, 0, 222);
+    color: rgb(196, 0, 222);
+    background: rgb(230, 219, 255);
     border-radius: 5px;
 }
 #reset:hover {

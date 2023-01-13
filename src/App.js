@@ -1,5 +1,6 @@
 // Import style sheets
-import './Styles/App.css'; 
+import './Styles/App.css';
+
 
 // Import NPM packages
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
@@ -17,7 +18,7 @@ function App() {
     var msg = new SpeechSynthesisUtterance();
     msg.text = document.getElementById('textarea').textContent;
     window.speechSynthesis.speak(msg);
-    
+
     msg.addEventListener("end", () => {
       document.getElementById("speaker").src = SpeakerMuted;
     });
@@ -27,29 +28,34 @@ function App() {
     transcript,
     listening,
     browserSupportsSpeechRecognition
-  } = useSpeechRecognition();  
+  } = useSpeechRecognition();
 
   const reset = () => {
     window.location.reload();
   }
-    
+
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn't support speech recognition.</span>;
   }
 
   return (
-    <div id='flex-parent'>
-        <img src={listening ? Microphone : MicrophoneMuted} id='microphone' alt='microphone' className='flex-element' onClick={listening ? SpeechRecognition.stopListening : SpeechRecognition.startListening }/>
+    <div id='flex'>
+      <div >
+      <img src={listening ? Microphone : MicrophoneMuted} id='microphone' alt='microphone' className='flex-element' onClick={listening ? SpeechRecognition.stopListening : SpeechRecognition.startListening} />
+      <button onClick={reset} id='reset'>Reset</button>
+      <img src={SpeakerMuted} onClick={speakContent} id='speaker' alt='speaker' className='flex-element' />
+      </div>
+      <div id='flex-parent'>
+
         <div className='flex-element' id='center'>
           <div contentEditable id='textarea'>
             {transcript ? <p>{transcript}</p> : <p>Click the mike button and start speaking
-            (or)
-            Click on right speaker button to speak the contents in the box</p>}
+              (or)
+              Click on right speaker button to speak the contents in the box</p>}
           </div>
-          <button onClick={reset} id='reset'>Reset</button>
         </div>
-        
-        <img src={SpeakerMuted} onClick={speakContent} id='speaker' alt='speaker' className='flex-element'/>
+
+      </div>
     </div>
   );
 }
