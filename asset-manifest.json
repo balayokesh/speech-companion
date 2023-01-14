@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/speech-companion/static/css/main.cecce4bb.chunk.css",
-    "main.js": "/speech-companion/static/js/main.d3cfb86f.chunk.js",
-    "main.js.map": "/speech-companion/static/js/main.d3cfb86f.chunk.js.map",
+    "main.css": "/speech-companion/static/css/main.0e76c688.chunk.css",
+    "main.js": "/speech-companion/static/js/main.ce41fcfc.chunk.js",
+    "main.js.map": "/speech-companion/static/js/main.ce41fcfc.chunk.js.map",
     "runtime-main.js": "/speech-companion/static/js/runtime-main.b25d0250.js",
     "runtime-main.js.map": "/speech-companion/static/js/runtime-main.b25d0250.js.map",
     "static/js/2.4e1f5941.chunk.js": "/speech-companion/static/js/2.4e1f5941.chunk.js",
     "static/js/2.4e1f5941.chunk.js.map": "/speech-companion/static/js/2.4e1f5941.chunk.js.map",
     "index.html": "/speech-companion/index.html",
-    "static/css/main.cecce4bb.chunk.css.map": "/speech-companion/static/css/main.cecce4bb.chunk.css.map",
+    "static/css/main.0e76c688.chunk.css.map": "/speech-companion/static/css/main.0e76c688.chunk.css.map",
     "static/js/2.4e1f5941.chunk.js.LICENSE.txt": "/speech-companion/static/js/2.4e1f5941.chunk.js.LICENSE.txt",
     "static/media/microphone-muted.bcadbc7e.svg": "/speech-companion/static/media/microphone-muted.bcadbc7e.svg",
     "static/media/microphone.b9764a69.svg": "/speech-companion/static/media/microphone.b9764a69.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.b25d0250.js",
     "static/js/2.4e1f5941.chunk.js",
-    "static/css/main.cecce4bb.chunk.css",
-    "static/js/main.d3cfb86f.chunk.js"
+    "static/css/main.0e76c688.chunk.css",
+    "static/js/main.ce41fcfc.chunk.js"
   ]
 }
