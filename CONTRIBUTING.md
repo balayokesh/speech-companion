@@ -1,8 +1,6 @@
-## Contributing to speech-companion
+<h2 align='center'>Contributing to speech-companion</h2>
 
-We welcome contributions to speech-companion! 
-
-Here are the steps to follow:
+We welcome contributions to speech-companion!  Here are the steps to follow:
 
 ### Step 1: 
 **Create an [new issue](https://github.com/balayokesh/speech-companion/issues/new) or comment on an [existing issue](https://github.com/balayokesh/speech-companion/issues)**. This allows the maintainers to give feedback and guidance before you begin working on something, and helps ensure that the change is consistent with the overall direction of the project.
