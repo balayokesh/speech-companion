@@ -40,6 +40,9 @@ docker run --name speech-companion -p 8080:3000 -d speech-companion
 ```
 With your container running, you can now visit your application by navigating your browser to `http://localhost:8080`
 
+### Contributions:
+please read [contribution guide](https://github.com/balayokesh/speech-companion/blob/main/CONTRIBUTING.md) before proceeding.
+
 ### Contributors: 
 <a href="https://github.com/balayokesh/speech-companion/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=balayokesh/speech-companion" />
