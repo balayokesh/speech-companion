@@ -10,6 +10,10 @@ import MicrophoneMuted from './Images/microphone-muted.svg';
 import SpeakerMuted from './Images/speaker-muted.svg';
 import Speaker from './Images/speaker.svg';
 
+
+// For keyboard shortcuts
+import { useEffect } from 'react';
+
 function App() {
 
   function speakContent() {
@@ -21,6 +25,28 @@ function App() {
     msg.addEventListener("end", () => {
       document.getElementById("speaker").src = SpeakerMuted;
     });
+  }
+
+  useEffect(()=>{
+    document.addEventListener('keydown', detectKeyDown, true)
+  }, [])
+
+  const detectKeyDown = (e) =>{
+    e.preventDefault()
+    if(e.key === "s" &&  e.ctrlKey){
+        speakContent()
+    }
+    if(e.key === "m" &&  e.ctrlKey){
+
+      if(listening){
+        SpeechRecognition.stopListening()
+      }
+      else{
+        SpeechRecognition.startListening()
+      }
+
+    }
+
   }
 
   const {
@@ -36,6 +62,9 @@ function App() {
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn't support speech recognition.</span>;
   }
+
+  
+
 
   return (
     <div id='flex-parent'>
