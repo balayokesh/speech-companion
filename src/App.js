@@ -37,7 +37,6 @@ function App() {
       speakContent()
     }
     if (e.key === "m" && e.ctrlKey) {
-
       if (listening) {
         SpeechRecognition.stopListening()
       }
@@ -60,9 +59,6 @@ function App() {
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn't support speech recognition.</span>;
   }
-
-
-
 
   return (
     <div id='flex-parent'>

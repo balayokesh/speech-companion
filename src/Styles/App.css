@@ -1,7 +1,11 @@
 :root {
     background: linear-gradient(125deg, rgb(0, 0, 0), rgb(24, 24, 54));
 }
-#microphone, #microphone-muted, #speaker, #speaker-muted {
+
+#microphone,
+#microphone-muted,
+#speaker,
+#speaker-muted {
     width: 42px;
     height: 42px;
     padding: 1%;
@@ -9,6 +13,7 @@
     background: #fff;
     border-radius: 50%;
 }
+
 #textarea {
     background: linear-gradient(45deg, lightblue, lightgreen);
     padding: 2%;
@@ -19,7 +24,8 @@
     max-height: 80vh;
     overflow-y: scroll;
 }
-#flex-parent {  
+
+#flex-parent {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -27,29 +33,33 @@
     align-items: center;
     align-content: center;
 }
+
 #reset {
     width: 200px;
     font-size: 1.25em;
-    padding: 3% 2%;     
+    padding: 3% 2%;
     margin: 1%;
     border: 3px solid yellow;
     color: yellow;
     background: rgb(32, 32, 32);
     border-radius: 5px;
 }
+
 #reset:hover {
     cursor: pointer;
     background: rgb(54, 54, 134);
 }
+
 #center {
     text-align: center;
 }
+
 .flex-element {
     margin: 5%;
 }
 
 @media screen and (max-width: 800px) {
-    #flex-parent {  
+    #flex-parent {
         display: flex;
         flex-direction: column;
         width: 100vw;
@@ -58,6 +68,7 @@
         align-items: center;
         align-content: center;
     }
+
     #textarea {
         width: 95%;
     }
