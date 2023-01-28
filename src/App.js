@@ -62,7 +62,7 @@ function App() {
 
   return (
     <div id='flex-parent'>
-      <img src={listening ? Microphone : MicrophoneMuted} id='microphone' alt='microphone' className='flex-element' onClick={listening ? SpeechRecognition.stopListening : SpeechRecognition.startListening} />
+      <img src={listening ? Microphone : MicrophoneMuted} id='microphone' alt='microphone' className='flex-element' onClick={listening ? SpeechRecognition.stopListening : SpeechRecognition.startListening} title='Ctrl + M' />
       <div className='flex-element' id='center'>
         <div contentEditable id='textarea'>
           {transcript ? <p>{transcript}</p> : <p>Click the mike button and start speaking
@@ -72,7 +72,7 @@ function App() {
         <button onClick={reset} id='reset'>Reset</button>
       </div>
 
-      <img src={SpeakerMuted} onClick={speakContent} id='speaker' alt='speaker' className='flex-element' />
+      <img src={SpeakerMuted} onClick={speakContent} id='speaker' alt='speaker' className='flex-element' title='Ctrl + S' />
     </div>
   );
 }
